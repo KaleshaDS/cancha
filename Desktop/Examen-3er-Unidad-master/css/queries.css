@@ -1,0 +1,23 @@
+.container {
+    padding:0px;
+}
+
+@media screen and (max-width:760px) {
+    div.masterblock{
+        display: none;
+    }
+    div.block-master-chat{
+    	display: none;
+    }
+    div.col-chat{
+    	width: 100%;
+    }
+}
+
+@media(min-width:1300px) {
+    .container {
+        width: 1321px;
+        padding:0px;
+    }
+}
+
