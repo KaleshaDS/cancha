@@ -14,7 +14,7 @@
          <!--jQuery UI CSS-->
          <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" media="screen" />
          <!--Custom-->
-         <link rel="stylesheet" type="text/css" href="main.css">
+         <link rel="stylesheet" type="text/css" href="css/main.css">
 
       </head>
       <body>
@@ -38,11 +38,15 @@
                   <table id="datos">
                      <tr>
                         <td>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
                            <a href="#">
-                              <div class="contacts-chat">
-                                 <img src="image/logocodeacademy.png" class="bubble">
+                              <div class="contacts-chat" id="conversa1">
+                                 <img src="image/logocodeacademy.png" class="bubble" id="imgconv">
                                  <div class="inline name">
-                                    <h5>Laboratoria Perú</h5>
+                                    <h5 class="nomChat">Laboratoria Perú</h5>
                                     <p class="text-muted">Aldo:Dale dale!</p>
                                     <span class="text-muted hour">14:25</span>
                                  </div>
@@ -53,7 +57,7 @@
                      <tr>
                         <td>
                            <a href="#">
-                              <div class="contacts-chat">
+                              <div class="contacts-chat" id="conversa2">
                                  <img src="image/raymi.jpg" class="bubble">
                                  <div class="name inline">
                                     <h5>Raymi Saldomando</h5>
@@ -67,7 +71,7 @@
                      <tr>
                         <td>
                            <a href="#">
-                              <div class="contacts-chat">
+                              <div class="contacts-chat" id="conversa3">
                                  <img src="image/mariana.jpg" class="bubble">
                                  <div class="name inline">
                                     <h5>Mariana Costa</h5>
@@ -81,7 +85,7 @@
                      <tr>
                         <td>
                            <a href="#">
-                              <div class="contacts-chat">
+                              <div class="contacts-chat" id="conversa4">
                                  <img src="image/anamaria.jpg" class="bubble">
                                  <div class="name inline">
                                     <h5>Ana María Martinez Franklin</h5>
@@ -95,7 +99,7 @@
                      <tr>
                         <td>
                            <a href="#">
-                              <div class="contacts-chat">
+                              <div class="contacts-chat" id="conversa5">
                                  <img src="image/rodulfo.jpg" class="bubble">
                                  <div class="name inline">
                                     <h5>Rodulfo Prieto</h5>
@@ -109,7 +113,7 @@
                      <tr>
                         <td>
                            <a href="#">
-                              <div class="contacts-chat">
+                              <div class="contacts-chat" id="conversa6">
                                  <img src="image/andrea.jpg" class="bubble">
                                  <div class="name inline">
                                     <h5>Andrea Lamas</h5>
@@ -123,7 +127,7 @@
                      <tr>
                         <td>
                            <a href="#">
-                              <div class="contacts-chat">
+                              <div class="contacts-chat" id="conversa7">
                                  <img src="image/mariapaula.jpg" class="bubble">
                                  <div class="name inline">
                                     <h5>Maria Paula Rivarola</h5>
@@ -137,11 +141,11 @@
                      <tr>
                         <td>
                            <a href="#">
-                              <div class="contacts-chat">
-                                 <img src="image/katy.jpg" class="bubble">
+                              <div class="contacts-chat" id="conversa8">
+                                 <img src="image/katy.jpg" class="bubble1">
                                  <div class="name inline">
                                     <h5>Katy Sanchez</h5>
-                                    <p class="text-muted">No te preocupes, tengo el salon bajo contr</p>
+                                    <p class="text-muted">No te preocupes, tengo el salon</p>
                                     <span class="text-muted hour">11/01/2016</span>
                                  </div>
                               </div>
@@ -151,7 +155,7 @@
                      <tr>
                         <td>
                            <a href="#">
-                              <div class="contacts-chat">
+                              <div class="contacts-chat" id="conversa9">
                                  <img src="image/aldo.jpg" class="bubble">
                                  <div class="name inline">
                                     <h5>Aldo Alfaro</h5>
@@ -166,83 +170,82 @@
                </div>
 <!-- Chat activo -->
                <div class="block-master-chat inline">
-                  <table>
-                     <tr>
-                        <td>
-                           <div>
-                              <img src="image/logocodeacademy.png" class="avatar">
-                              <div class="name inline">
-                                 <h5 class="">Laboratoria Perú</h5>
-                                 <p class="text-muted">Ana Maria, Aldo, Gian, Mariana, Papu, Tú</p>
-                              </div>
-                              <div class="inline iconos">
-                                 <p class="icon-attachment inline"></p>
-                                 <p class="icon-dots-three-vertical inline"></p>
-                              </div>
+
+                  <div>
+                     <img src="image/logocodeacademy.png" class="avatar">
+                        <div class="name inline">
+                              <h5 class="">Laboratoria Perú</h5>
+                              <p class="text-muted">Ana Maria, Aldo, Gian, Mariana, Papu, Tú</p>
                            </div>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <div class="chat">
-                              <div class="op-j scroll" id="windowchat">
-                                 <div class="p-chat">
-                                    <h5 id="andrea">Andrea Lamas</h5>
-                                    <h6>Chicos han visto el nuevo corte de Aldo?<span class="text-mutted pull-right">11:12</span></h6>
-                                 </div>
-                                 <div class="p-chat">
-                                    <h5 id="mariana">Mariana Costa</h5>
-                                    <h6>¿Finalmente se corto><span class="text-mutted pull-right">11:13</span></h6>
-                                 </div>
-                                 <div class="p-chat">
-                                    <h5 id="paula">Maria Paula Rivarola</h5>
-                                    <h6>Jajaja Sii finalmente se corto!!<span class="text-mutted pull-right">11:13</span></h6>
-                                 </div>
-                                 <div class="r-chat">
-                                    <h6>Antes parecia Mufasa jajajajajaja 
-                                       <span class="text-mutted pull-right">11:14</span></h6>
-                                 </div>
-                                 <div class="r-chat">
-                                    <h6>Ahora si esta decente
-                                        <span class="text-mutted pull-right hora">11:18</span></h6>  
-                                 </div>
-                                 <div class="p-chat">
-                                    <h5 id="andrea">Andrea Lamas</h5>
-                                    <h6>¿Porque se lo habra cortado?<span class="text-mutted pull-right hora">11:20</span></h6>
-                                 </div>
-                                 <div class="p-chat">
-                                    <h5 id="aldo">Aldo Alfaro</h5>
-                                    <h6>Ya ya ya, hacia mucho calor que más 
-                                       <span class="text-mutted pull-right hora">11:25</span></h6>
-                                 </div>
-                                 <div class="p-chat">
-                                    <h5 id="andrea">Andrea Lamas</h5>
-                                    <h6>Esta siguiendo los pasos de Juan Diego
-                                       <span class="text-mutted pull-right hora">11:30</span></h6>
-                                 </div>
-                                 <div class="p-chat">
-                                    <h5 id="paula">Maria Paula Rivarola</h5>
-                                    <h6>Nunca!!! Juan Diego es único 
-                                       <span class="text-mutted pull-right hora">11:31</span>
-                                    </h6>
-                                 </div>
-                                 <ul id="mensajitos" class="list-unstyled"></ul>
+                           <div class="inline iconos">
+                              <p class="icon-attachment inline"></p>
+                              <p class="icon-dots-three-vertical inline"></p>
+                           </div>
+                        </div>
+                        
+                        <div class="chat">
+                           <div class="op-j scroll">
+
+                              <div class="p-chat">
+                                 <h5 id="andrea">Andrea Lamas</h5>
+                                 <h6>Chicos han visto el nuevo corte de Aldo?<span class="text-mutted pull-right">11:12</span></h6>
                               </div>
+
+                              <div class="p-chat">
+                                 <h5 id="mariana">Mariana Costa</h5>
+                                 <h6>¿Finalmente se corto><span class="text-mutted pull-right">11:13</span></h6>
+                              </div>
+
+                              <div class="p-chat">
+                                 <h5 id="paula">Maria Paula Rivarola</h5>
+                                 <h6>Jajaja Sii finalmente se corto!!<span class="text-mutted pull-right">11:13</span></h6>
+                              </div>
+
+                              <div class="r-chat">
+                                 <h6>Antes parecia Mufasa jajajajajaja<span class="text-mutted pull-right">11:14</span></h6>
+                              </div>
+
+                              <div class="r-chat">
+                                 <h6>Ahora si esta decente <span class="text-mutted pull-right hora">11:18</span></h6>  
+                              </div>
+
+                              <div class="p-chat">
+                                 <h5 id="andrea">Andrea Lamas</h5>
+                                 <h6>¿Porque se lo habra cortado?<span class="text-mutted pull-right hora">11:20</span></h6>
+                              </div>
+
+                              <div class="p-chat">
+                                 <h5 id="aldo">Aldo Alfaro</h5>
+                                 <h6>Ya ya ya, hacia mucho calor que más<span class="text-mutted pull-right hora">11:25</span></h6>
+                              </div>
+
+                              <div class="p-chat">
+                                 <h5 id="andrea">Andrea Lamas</h5>
+                                 <h6>Esta siguiendo los pasos de Juan Diego<span class="text-mutted pull-right hora">11:30</span></h6>
+                              </div>
+
+                              <div class="p-chat">
+                                 <h5 id="paula">Maria Paula Rivarola</h5>
+                                 <h6>Nunca!!! Juan Diego es único <span class="text-mutted pull-right hora">11:31</span>
+                                    </h6>
+                              </div>
+
+                              <ul id="mensajitos" class="list-unstyled"></ul>
+
+                              </div>
+
                               <div class="text-box" id="chat_div">
                                  <input type="text" name="type" class="form-control" id="intro" placeholder="Escribir Mensaje"/>
                                  <!-- <button id="send" class="btn btn-circle btn-default add" onclick="add()">Enviar</button> -->
                               </div>
-                           </div>
-                        </td>
-                     </tr>
-                  </table>
+                  </div>
                </div>
 
 
 
          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-         <script type="text/javascript" src="main.js"></script>
-         <script type="text/javascript" src="moments.js"></script>
+         <script type="text/javascript" src="js/main.js"></script>
+         <script type="text/javascript" src="js/moments.js"></script>
       </body>
       </html>		
 	

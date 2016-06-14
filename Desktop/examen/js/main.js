@@ -3,10 +3,10 @@ function add() {
    var li = document.createElement('li');
    li.className = 'row';
    var msn = document.getElementById('intro').value;
-   li.innerHTML ='<div class= "r-chat">'+ msn + ' <span>'+moment().format("HH:mm")+'</span>'+'</div';
+   li.innerHTML ='<div class= "r-chat">'+ msn + '<span>'+moment().format("HH:mm")+'</span>'+'</div';
    document.getElementById('mensajitos').appendChild(li);
 }
-//Limpiar el input #intro cuando se envia el mensaje//
+//Limpiar el imput #intro cuando se envia el mensaje//
 $('#send').click(function(){
    var texto = $('#intro').val();
    $('#intro').val('');
@@ -35,7 +35,7 @@ function search(){
 // Recorremos todas las celdas
    for (var j = 0; j < cells.length && !found; j++){
    compareWith = cells[j].innerHTML.toLowerCase();
-// Buscamos el texto en el contenido de la celda//
+// Buscamos el texto en el contenido de la celda
    if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1)){
       found = true;
       }
@@ -49,11 +49,10 @@ function search(){
    }
 }
 
-// Cambiar de Conversacion//
-$(document).ready(function(){
-      $('#conversa1').click(function(){
-            $('.block-master-chat').val('').empty();
-            $("#imgconv").attr("src","image/katy.jpg");
-            $("#nomChat").text('Katy Sanchez');
-      });
-});
+//Limpiar ventana de chat//
+$(".contacts-chat").click(function(){
+      $(".chat").empty();
+    });
+
+
+
